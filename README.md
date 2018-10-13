@@ -37,7 +37,7 @@ DFL强调基础结构的简单性、基础结构的可连接性、连接规则�
 
 一致性问题是分布式计算最为基础的问题，是指对于分布式网络中的节点，给定一系列操作，在约定协议的保障下，达到对处理结果的共同认同。达到认同的过程可以用共识算法来进行表述，同时数据的结构和状态会严重影响共识算法的表现。由于CAP原理（Eric Brewer 2000年ACM会议提出的分布式计算领域重要原理之一）的存在，即分布式系统不能同时满足一致性（Consistency） 、可用性（Availability） 和分区容忍性（Partition），系统设计时需要有所取舍。我们的倾向是尽力去除系统的不确定性，哪怕牺牲一定的效率和空间。同时，通过对地址空间进行分区管理，根据可能的节点数和并发量，我们可以设计递归构建账本的结构的层级，以及地址空间划分的程度。
 
-![](https://github.com/assetree/whitepaper/raw/master/images/assetree.png)
+![](https://github.com/assetree/documents/blob/master/images/assetree.png)
 图1 Assetree账本结构示意图
 
 
